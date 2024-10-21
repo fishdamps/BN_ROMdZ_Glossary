@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -130,7 +131,7 @@
 
   // Load data from the CSV format of the published Google Sheet
   async function loadData() {
-    const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vRkIBQQYrxkeYTdlGxCCBTT7ntu5nPNWQ1EUyOUi1HBl4qw3lNz43eABNTIBlF5yCTNo9o2YAfTNG4h/pubpub?output=csv');
+    const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vRkIBQQYrxkeYTdlGxCCBTT7ntu5nPNWQ1EUyOUi1HBl4qw3lNz43eABNTIBlF5yCTNo9o2YAfTNG4h/pub?output=csv');
     const data = await response.text();
     const rows = data.split("\n").slice(1); // Remove header row
 
